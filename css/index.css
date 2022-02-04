@@ -1,0 +1,735 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Gothic+A1&display=swap');
+
+
+/* font-family: 'Fredoka One', cursive; */
+/* font-family: 'Gothic A1', sans-serif; */
+/* font-family: 'Anton', sans-serif; */
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 229, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+}
+
+
+.coverleft1 {
+    width: 50vw;
+    height: 100vh;
+    background: rgb(243, 185, 12);
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: -55.6%;
+}
+
+.coverleft1.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+
+.coverleft>img {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 350px;
+}
+
+.coverright1 {
+    width: 50vw;
+    height: 100vh;
+    background: rgb(243, 151, 12);
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    right: -55.6%;
+}
+
+.coverright1.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+
+.coverright>img {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 350px;
+}
+
+.coveredleft {
+    width: 50vw;
+    height: 100vh;
+    background: rgb(243, 185, 12);
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.coveredright {
+    width: 50vw;
+    height: 100vh;
+    background: rgb(243, 151, 12);
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.backbutton {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    ;
+    position: relative;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backbutton img {
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.backbutton:hover {
+    transform: rotate(720deg);
+    transition: 1s;
+}
+
+.backbutton:hover i {
+    transition: all 1s;
+    opacity: 0;
+}
+
+.backbutton:hover img {
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+
+
+.sect1 .smile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.sect1 .choi_inyong-txt {
+    display: none;
+}
+
+.sect1 .choi_inyong-typing {
+    font-size: 100px;
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid rgb(0, 0, 0);
+}
+
+.sect1 .choi_inyong-typing.fixed {
+    position: fixed;
+    border: none;
+}
+
+
+.sect1 .choi_inyong-typing.on {
+    animation-name: cursor;
+    animation-duration: 0.8s;
+    animation-iteration-count: 3;
+    border-right: 3px solid rgb(255, 229, 80);
+
+}
+
+@keyframes cursor {
+
+    50% {
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+
+}
+
+.sect1 .smileface {
+    width: 600px;
+    height: 600px;
+    border: 10px solid #000;
+    border-radius: 100%;
+    position: absolute;
+    margin: 0 auto;
+    display: none;
+}
+
+.sect1 .smileface.fixed {
+    position: fixed;
+}
+
+.sect1 .smilemouth {
+    width: 360px;
+    height: 300px;
+    /* border-bottom: 10px solid black; */
+    border-bottom: 40px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    display: none;
+}
+
+.sect1 .smilemouth.fixed {
+    position: fixed;
+}
+
+/* .sect1 .smilemouth.on{
+    
+    animation-name: shaking;
+    animation-iteration-count: infinite;
+    animation-duration: 0.4s;
+    transform: scale(1.3);
+}
+
+@keyframes shaking {
+    0% { transform: translate(1px, 1px) rotate(0deg) scale(1.4); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg) scale(1.4); }
+    20% { transform: translate(-3px, 0px) rotate(1deg) scale(1.4); }
+    30% { transform: translate(3px, 2px) rotate(0deg) scale(1.4); }
+    40% { transform: translate(1px, -1px) rotate(1deg) scale(1.4); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg) scale(1.4); }
+    60% { transform: translate(-3px, 1px) rotate(0deg) scale(1.4); }
+    70% { transform: translate(3px, 1px) rotate(-1deg) scale(1.4); }
+    80% { transform: translate(-1px, -1px) rotate(1deg) scale(1.4); }
+    90% { transform: translate(1px, 2px) rotate(0deg) scale(1.4); }
+    100% { transform: translate(1px, -2px) rotate(-1deg) scale(1.4); }
+  } */
+
+
+/* .sect1 .clickmouth{
+    position: absolute; margin: 0 auto; top:63%; font-size: 40px;
+    flex-direction: column; align-items: center;
+    animation-name: jumping;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+    display: none;
+}
+.sect1 .clickmouth.on{
+    display: flex;
+}
+
+@keyframes jumping{
+    0%{
+        transform: translateY(0%) scale(1.1); 
+    }
+    
+    100%{
+        transform: translateY(-20%) scale(1.5); color:rgb(240, 29, 29);
+    }
+}
+.sect1 .clickmouth .underclickmouth{
+    font-family: 'Fredoka One', cursive; font-size: 20px;
+} */
+
+.sect2 .mainsmile {
+    width: 1200px;
+    height: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    perspective: 1000px;
+
+}
+
+.CHOIINYONG {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(246, 179, 79, 0.7);
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+
+.sect2 .mainsmile img {
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.sect2 .mainsmile .front {
+    position: absolute;
+    transform: rotateY(0deg);
+}
+
+.sect2 .mainsmile.wrong .front {
+    transform: rotateY(180deg);
+}
+
+.sect2 .mainsmile.correct .front {
+    transform: rotateY(180deg);
+}
+
+
+.sect2 .mainsmile .back1 {
+    transform: rotateY(-180deg);
+    position: absolute;
+}
+
+.sect2 .mainsmile.wrong .back1 {
+    transform: rotateY(0deg);
+}
+
+
+.sect2 .mainsmile .back2 {
+    transform: rotateY(-180deg);
+    position: absolute;
+}
+
+.sect2 .mainsmile.correct .back2 {
+    transform: rotateY(0deg);
+}
+
+
+.sect2 #presstostart {
+    position: absolute;
+    margin: 0 auto;
+    top: 20%;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    cursor: pointer;
+    animation-name: jumping;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+    z-index: 999;
+    display: none;
+
+}
+
+@keyframes jumping {
+    0% {
+        transform: translateY(0%) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(-20%) scale(1.5);
+        color: rgb(240, 29, 29);
+    }
+}
+
+.sect2 #greybubble {
+    width: 250px;
+    height: 125px;
+    background: rgb(222, 222, 228);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    position: absolute;
+    top: 30%;
+    z-index: 999;
+    opacity: 0;
+    border-radius: 30px;
+}
+
+.sect2 #greybubble::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: 10px;
+    border: 0 solid transparent;
+    border-top: 9px solid rgb(222, 222, 222);
+    border-radius: 0 15px 0;
+    width: 15px;
+    height: 30px;
+    transform: rotate(145deg) translateX(20px);
+}
+
+.sect2 #greybubble div {
+    font-weight: bold;
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 5%;
+    font-size: 23px;
+}
+
+.sect2 #greybubble div:nth-child(2) {
+    font-size: 50px;
+    color: rgb(40, 22, 237);
+    display: none;
+}
+
+.sect2 #greybubble div:nth-child(3) {
+    font-size: 50px;
+    color: rgb(252, 25, 25);
+    display: none;
+}
+
+
+
+.sect2 .confirmname {
+    position: absolute;
+    top: 70%;
+    display: none;
+}
+
+.sect2 .confirmname #greenbubble {
+    width: 300px;
+    height: 150px;
+    background: rgb(30, 220, 60);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 150px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.sect2 .confirmname div.on {
+    transform: scale(1.2);
+}
+
+.sect2 .confirmname #mynamesubmit {
+    margin-top: 5%;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    border: 3px solid black;
+    background: orange;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.sect2 .talkmenuarea {
+    position: absolute;
+    bottom: 0;
+    width: 70vw;
+    height: 30vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 40px 0 0;
+    transform: translateY(300px);
+}
+
+.sect2 .talkmenuarea>div {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(133, 133, 133);
+    font-size: 20px;
+    height: 200px;
+    width: 300px;
+
+}
+
+
+.sect2 .fakearea {
+    position: absolute;
+    bottom: 0;
+    width: 70vw;
+    height: 30vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 40px 0 0;
+    transform: translateY(300px);
+
+}
+
+.sect2 .fakearea>div {
+    width: 250px;
+    height: 150px;
+    background: rgb(30, 220, 60);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 150px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 0 25px;
+
+
+}
+
+.sect2 .fakearea>div.on {
+    animation-name: shaking;
+    animation-iteration-count: infinite;
+    animation-duration: 0.4s;
+    transform: scale(2);
+}
+
+@keyframes shaking {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+
+
+.sect3 {
+    display: block;
+}
+
+.sect3 h2 {
+    font-size: 60px;
+    font-family: 'Fredoka One', cursive;
+    margin: 20px 50px;
+    background: orange;
+    position: absolute;
+}
+
+.sect3 .PPcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.sect3 .PPcontainer>div {
+    text-align: center;
+    margin: 4% 1%;
+    width: 20%;
+}
+
+.sect3 .PPcontainer>div.on img {
+    transform: scale(1.1);
+    border: 4px solid orange;
+}
+
+.sect3 .PPitem {
+    position: relative;
+    cursor: pointer;
+}
+
+.sect3 .PPitem img {
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.sect3 .PPitem .front {
+    transform: rotateY(0deg);
+    position: absolute;
+}
+
+.sect3 .PPitem:hover .front {
+    transform: rotateY(180deg);
+}
+
+.sect3 .PPitem .back {
+    transform: rotateY(-180deg);
+}
+
+.sect3 .PPitem:hover .back {
+    transform: rotateY(0deg);
+    transform: scale(1.2);
+}
+
+
+
+
+.sect4 {
+    display: block;
+    position: relative;
+}
+
+.sect4 .i {
+    color: orange;
+}
+
+.sect4 .personal {
+    font-size: 15px;
+}
+
+.sect4 h2 {
+    font-size: 60px;
+    font-family: 'Fredoka One', cursive;
+    margin: 20px 50px;
+    background: orange;
+    position: absolute;
+}
+
+.sect4 .RScontainer {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 130px;
+    padding-left: 100px;
+}
+
+.sect4 .RScontainer>div {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: space-between;
+}
+
+.sect4 h3 {
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+.resumeleft .personal {
+    margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+}
+
+.resumeleft .personal>div {
+    display: flex;
+}
+
+.resumeleft .personal .material-icons {
+    color: orange;
+    margin-right: 10px;
+}
+
+.resumeright {
+    padding-left: 150px;
+}
+
+.resumeright>div>p {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+#rssmile {
+    font-size: 200px;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 300px;
+    left: 300px;
+    color: rgba(254, 135, 9, 0.7);
+}
+
+
+
+
+
+.sect5 {
+    display: block;
+}
+
+
+
+.outbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+
+.outbox .inbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid #fff;
+}
+
+.outbox .inbox button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+
+}
